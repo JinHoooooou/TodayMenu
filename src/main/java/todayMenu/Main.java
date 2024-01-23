@@ -12,7 +12,6 @@ public class Main {
     String beerHouseUrl = beerHouseScrapper.getTodayMenuImageUrl();
     String goshiBuffetUrl = goshiBuffetScrapper.getTodayMenuImageUrl();
 
-    // clova API 이용해서 url 전달
     System.out.println(beerHouseUrl);
     System.out.println(goshiBuffetUrl);
     scrapper.close();

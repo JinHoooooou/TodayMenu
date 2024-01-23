@@ -20,7 +20,6 @@ public class GoshiBuffetScrapper {
 
   private String scrapImageUrlFromHtml() {
     List<WebElement> list = scrapper.webDriver.findElements(By.cssSelector(".wrap_post"));
-    // 현재는 두번째 게시물 (알바구하느라..) (첫번째 게시물은 알바 구인글)
     WebElement target = list.get(1);
     return target.findElement(By.cssSelector(".link_post .img_thumb")).getAttribute("src");
   }
